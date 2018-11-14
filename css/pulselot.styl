@@ -9,9 +9,12 @@ body
 
 header
   background gris_oscuro
+  box-shadow 0 5px 0 rgba(0,0,0,0.2)
   color white
-  padding 1em
+  padding 0.5em
   overflow hidden
+  position relative
+  z-index 1
 
 
   .logo
@@ -74,6 +77,18 @@ header
       width 50%
 nav
   background azul
+  border-left 15px solid white
+  position relative
+  /*Estilo a flechita blanca en el nav*/
+  &:before
+    border-bottom 20px solid transparent
+    border-left 7px solid white
+    border-top 20px solid transparent
+    content ""
+    position absolute
+    top 0
+    left 0
+
   .menu
     padding 0
     height 40px
